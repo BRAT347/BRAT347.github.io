@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOYRAZ Cem — Portfolio</title>
+  <meta name="description" content="Portfolio de Cem Boyraz, étudiant en 2e année de BUT Informatique à l'IUT de Reims, à la recherche d'un stage de 8 à 12 semaines en développement, systèmes et réseaux." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<!-- ─── NAVBAR ───────────────────────────────────────────── -->
+<nav class="navbar" aria-label="Navigation principale">
+  <a href="#top" class="nav-logo" aria-label="Retour en haut de page">CEM.</a>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="CV_Cem_Boyraz.pdf" class="nav-cv" download>CV (PDF)</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────────────────── -->
+<header class="hero-pin" id="top">
+<div class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-visuel" aria-hidden="true">
+    <canvas class="globe"></canvas>
+    <p class="globe-hud">Chiffrement du réseau <span class="hud-valeur">0 %</span></p>
+  </div>
+  <div class="hero-content">
+    <p class="statut-stage">Recherche un stage de 8 à 12 semaines</p>
+    <h1 data-dechiffre>BOYRAZ Cem</h1>
+    <p class="etudiant">Étudiant en 2<sup>e</sup> année de <a href="https://iut-info.univ-reims.fr/">BUT Informatique</a></p>
+    <p class="hero-desc">
+      Développement, systèmes &amp; réseaux. Je conçois des applications web en
+      <strong>PHP / SQL</strong>, j'administre des serveurs <strong>Linux</strong>
+      et je m'intéresse de près à la <strong>cybersécurité</strong>.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Me contacter</a>
+      <a href="CV_Cem_Boyraz.pdf" class="btn btn-ghost" download>Télécharger mon CV</a>
+    </div>
+  </div>
+  <p class="defiler" aria-hidden="true">Défiler</p>
+</div>
+</header>
+
+<main id="main">
+
+
+<!-- ─── ABOUT ─────────────────────────────────────────────── -->
+<section class="about" id="about">
+  <div class="container">
+    <img src="gif_anonymous.gif" alt="" class="profile-img" width="200" height="200" decoding="async" />
+    <div class="about-text">
+      <h2>Qui suis-je ?</h2>
+      <p>
+        Je m'appelle Cem Boyraz, étudiant en 2<sup>e</sup> année de BUT Informatique à l'IUT de Reims
+        (Université de Reims Champagne-Ardenne), parcours <strong>Développement — C++ et conception d'application</strong>.
+        J'ai acquis des compétences en Python, PHP, SQL et développement web à travers plusieurs projets
+        universitaires et personnels, du site web connecté à une base de données jusqu'à l'installation complète
+        d'un serveur Linux.
+      </p>
+      <p>
+        Je recherche aujourd'hui un <strong>stage de 8 à 12 semaines</strong> en développement, systèmes et réseaux
+        pour mettre ces compétences en pratique en entreprise.
+      </p>
+      <ul class="about-facts">
+        <li><span>Lieu</span>Reims (51100)</li>
+        <li><span>Mobilité</span>Permis B</li>
+        <li><span>Langues</span>Français, anglais (B2), turc</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PARCOURS ──────────────────────────────────────────── -->
+<section class="section" id="parcours" aria-labelledby="titre-parcours">
+  <h2 class="titre-section" id="titre-parcours">Parcours</h2>
+
+  <div class="parcours">
+    <div>
+      <h3 class="sous-titre">Formation</h3>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-date">Sept. 2025 — aujourd'hui</span>
+          <h4>BUT Informatique</h4>
+          <p class="timeline-lieu">IUT de Reims</p>
+          <p class="timeline-desc">Parcours Développement — C++ et conception d'application.</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Sept. 2022 — juil. 2025</span>
+          <h4>Baccalauréat général</h4>
+          <p class="timeline-lieu">Lycée Hugues Libergier, Reims</p>
+          <p class="timeline-desc">Spécialités Mathématiques et NSI (Numérique et Sciences Informatiques).</p>
+        </li>
+      </ol>
+    </div>
+
+    <div>
+      <h3 class="sous-titre">Expérience</h3>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-date">Été 2025 &amp; été 2026</span>
+          <h4>Ouvrier sprinkler — emploi saisonnier</h4>
+          <p class="timeline-lieu">AZI Construction, Brétigny-sur-Orge</p>
+          <p class="timeline-desc">Installation et pose de réseaux de sprinklers sur différents chantiers.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ─── COMPÉTENCES ───────────────────────────────────────── -->
+<section class="section" id="competences" aria-labelledby="titre-competences">
+  <h2 class="titre-section" id="titre-competences">Compétences</h2>
+
+  <div class="competences">
+
+    <!-- Développement Web -->
+    <article class="bloc">
+      <div class="bd_header">
+        <img src="dev_web.png" class="bd_img" alt="" width="50" height="50" loading="lazy" />
+        <div class="bd_text">
+          <h3>Développement Web</h3>
+          <p class="bd_subtitle">Sites dynamiques et back-end PHP.</p>
+        </div>
+      </div>
+      <hr />
+      <ul>
+        <li>Structuration sémantique avec <strong>HTML</strong> et mise en forme avec <strong>CSS</strong></li>
+        <li>Back-end en <strong>PHP</strong> orienté objet</li>
+        <li>Framework <strong>Symfony</strong></li>
+        <li>Ajout, modification et suppression de données depuis un site web</li>
+        <li>E-commerce avec <strong>Shopify</strong></li>
+      </ul>
+    </article>
+
+    <!-- Langages -->
+    <article class="bloc">
+      <div class="bd_header">
+        <img src="language_algo.png" class="bd_img" alt="" width="50" height="50" loading="lazy" />
+        <div class="bd_text">
+          <h3>Programmation &amp; algorithmique</h3>
+          <p class="bd_subtitle">Langages compilés et de script.</p>
+        </div>
+      </div>
+      <hr />
+      <h4>C++</h4>
+      <ul>
+        <li>Conception d'application et programmation orientée objet.</li>
+      </ul>
+      <h4>Python</h4>
+      <ul>
+        <li>Structures de contrôle et de données.</li>
+        <li>Résolution de problèmes algorithmiques.</li>
+      </ul>
+    </article>
+
+    <!-- Base de données -->
+    <article class="bloc">
+      <div class="bd_header">
+        <img src="img_bd.png" class="bd_img" alt="" width="50" height="50" loading="lazy" />
+        <div class="bd_text">
+          <h3>Base de données</h3>
+          <p class="bd_subtitle">Conception et exploitation.</p>
+        </div>
+      </div>
+      <hr />
+      <ul>
+        <li><strong>Conception relationnelle</strong> et modélisation (PowerAMC)</li>
+        <li>Requêtage et manipulation de données <strong>SQL</strong></li>
+        <li>SGBD <strong>MySQL</strong> et <strong>Oracle</strong></li>
+        <li>Administration via <strong>phpMyAdmin</strong></li>
+      </ul>
+    </article>
+
+    <!-- Systèmes & Réseaux -->
+    <article class="bloc">
+      <div class="bd_header">
+        <img src="reseaux.png" class="bd_img" alt="" width="50" height="50" loading="lazy" />
+        <div class="bd_text">
+          <h3>Systèmes &amp; Réseaux</h3>
+          <p class="bd_subtitle">Administration et analyse.</p>
+        </div>
+      </div>
+      <hr />
+      <ul>
+        <li>Administration <strong>Linux</strong> (utilisateurs, permissions)</li>
+        <li>Services : <strong>SSH, Apache2, HTTPS/SSL, Samba</strong></li>
+        <li>Modèles TCP/IP et OSI, adressage IP</li>
+        <li>Analyse de trafic avec <strong>Wireshark</strong></li>
+        <li>Simulation réseau sous Cisco Packet Tracer</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<!-- ─── OUTILS ────────────────────────────────────────────── -->
+<section class="section" id="outils" aria-labelledby="titre-outils">
+  <h2 class="titre-section" id="titre-outils">Outils et Environnement</h2>
+
+  <div class="outils">
+
+    <div class="outil-categorie">
+      <div class="outil-cat-header">
+        <span class="outil-icon" aria-hidden="true">{ }</span>
+        <h3>Langages</h3>
+      </div>
+      <ul class="outil-tags">
+        <li class="tag tag-accent">Python</li>
+        <li class="tag tag-accent">PHP</li>
+        <li class="tag tag-accent">SQL</li>
+        <li class="tag tag-accent">C++</li>
+        <li class="tag">HTML / CSS</li>
+        <li class="tag">Symfony</li>
+      </ul>
+    </div>
+
+    <div class="outil-categorie">
+      <div class="outil-cat-header">
+        <span class="outil-icon" aria-hidden="true">✎</span>
+        <h3>IDE / Éditeurs</h3>
+      </div>
+      <ul class="outil-tags">
+        <li class="tag">VS Code</li>
+        <li class="tag">PhpStorm</li>
+        <li class="tag">PyCharm</li>
+      </ul>
+    </div>
+
+    <div class="outil-categorie">
+      <div class="outil-cat-header">
+        <span class="outil-icon" aria-hidden="true">○</span>
+        <h3>Base de données</h3>
+      </div>
+      <ul class="outil-tags">
+        <li class="tag">MySQL</li>
+        <li class="tag">Oracle</li>
+        <li class="tag">PowerAMC</li>
+        <li class="tag">phpMyAdmin</li>
+      </ul>
+    </div>
+
+    <div class="outil-categorie">
+      <div class="outil-cat-header">
+        <span class="outil-icon" aria-hidden="true">◈</span>
+        <h3>Systèmes</h3>
+      </div>
+      <ul class="outil-tags">
+        <li class="tag">Linux (Ubuntu, Kali)</li>
+        <li class="tag">Windows</li>
+        <li class="tag">Apache2</li>
+      </ul>
+    </div>
+
+    <div class="outil-categorie">
+      <div class="outil-cat-header">
+        <span class="outil-icon" aria-hidden="true">◎</span>
+        <h3>Analyse réseau</h3>
+      </div>
+      <ul class="outil-tags">
+        <li class="tag tag-accent">Wireshark</li>
+        <li class="tag tag-accent">Cisco Packet Tracer</li>
+      </ul>
+    </div>
+
+    <div class="outil-categorie">
+      <div class="outil-cat-header">
+        <span class="outil-icon" aria-hidden="true">△</span>
+        <h3>Versioning &amp; divers</h3>
+      </div>
+      <ul class="outil-tags">
+        <li class="tag">GitLab</li>
+        <li class="tag">Shopify</li>
+        <li class="tag">Canva</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── PROJETS ───────────────────────────────────────────── -->
+<section class="section" id="projets" aria-labelledby="titre-projets">
+  <h2 class="titre-section" id="titre-projets">Projets</h2>
+
+  <div class="projets-grid">
+
+    <!-- Serveur Linux -->
+    <article class="projet-bloc">
+      <div class="projet-header">
+        <span class="projet-icon" aria-hidden="true">◎</span>
+        <h3 class="projet-titre">Installation et configuration d'un serveur</h3>
+        <span class="projet-tag-type">Réseau</span>
+      </div>
+      <p class="projet-meta">Projet universitaire · en binôme</p>
+      <ul class="projet-points">
+        <li>Installation d'un serveur sous <strong>Linux Ubuntu</strong>.</li>
+        <li>Déploiement de services réseau et web : SSH, Apache2, HTTPS/SSL, PHP, MySQL, phpMyAdmin, Samba et Lufi.</li>
+        <li>Configuration de <strong>VirtualHosts</strong>, gestion des utilisateurs et des permissions.</li>
+        <li>Tests, diagnostic et résolution de problèmes de configuration.</li>
+        <li>Rédaction d'un compte-rendu technique.</li>
+      </ul>
+      <ul class="projet-techs" aria-label="Technologies">
+        <li class="tag">Linux</li>
+        <li class="tag">Apache2</li>
+        <li class="tag">SSH</li>
+        <li class="tag">SSL/HTTPS</li>
+        <li class="tag">MySQL</li>
+        <li class="tag">Samba</li>
+        <li class="tag">Lufi</li>
+      </ul>
+    </article>
+
+    <!-- Gestion de films -->
+    <article class="projet-bloc">
+      <div class="projet-header">
+        <span class="projet-icon" aria-hidden="true">◈</span>
+        <h3 class="projet-titre">Site web de gestion de films</h3>
+        <span class="projet-tag-type">Web</span>
+      </div>
+      <p class="projet-meta">Projet universitaire · en binôme</p>
+      <ul class="projet-points">
+        <li>Site web permettant de consulter et gérer une <strong>base de données de films</strong>.</li>
+        <li>Fonctionnalités d'ajout, de modification et de suppression de films.</li>
+      </ul>
+      <ul class="projet-techs" aria-label="Technologies">
+        <li class="tag">HTML</li>
+        <li class="tag">CSS</li>
+        <li class="tag">PHP</li>
+        <li class="tag">SQL</li>
+      </ul>
+    </article>
+
+    <!-- MaillotFlex -->
+    <article class="projet-bloc">
+      <div class="projet-header">
+        <span class="projet-icon" aria-hidden="true">◇</span>
+        <h3 class="projet-titre">MaillotFlex — boutique e-commerce</h3>
+        <span class="projet-tag-type">Perso</span>
+      </div>
+      <p class="projet-meta">Projet personnel · clôturé</p>
+      <ul class="projet-points">
+        <li>Création et gestion d'une boutique en ligne de <strong>maillots de football</strong>.</li>
+        <li>Fonctionnement en <strong>dropshipping</strong> : expédition directe du fournisseur au client.</li>
+        <li>Gestion des produits, des commandes et de la boutique.</li>
+      </ul>
+      <ul class="projet-techs" aria-label="Technologies">
+        <li class="tag">Shopify</li>
+        <li class="tag">HTML</li>
+        <li class="tag">CSS</li>
+      </ul>
+    </article>
+
+    <!-- Sensibilisation au phishing -->
+    <article class="projet-bloc">
+      <div class="projet-header">
+        <span class="projet-icon" aria-hidden="true">◆</span>
+        <h3 class="projet-titre">Analyse d'une page de phishing</h3>
+        <span class="projet-tag-type">Cyber</span>
+      </div>
+      <p class="projet-meta">Projet personnel · sensibilisation &amp; défense</p>
+      <ul class="projet-points">
+        <li>Étude, en environnement local isolé, d'une fausse page de connexion imitant un service connu (type PayPal).</li>
+        <li>Analyse des techniques de l'attaquant : URL trompeuse, usurpation visuelle, sentiment d'urgence.</li>
+        <li>Rédaction de bonnes pratiques pour <strong>reconnaître et éviter</strong> une tentative d'hameçonnage.</li>
+      </ul>
+      <ul class="projet-techs" aria-label="Technologies">
+        <li class="tag">HTML</li>
+        <li class="tag">CSS</li>
+        <li class="tag">Sécurité web</li>
+        <li class="tag">Labo isolé</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<!-- ─── LANGUES & INTÉRÊTS ───────────────────────────────── -->
+<section class="section" aria-label="Langues et centres d'intérêt">
+  <div class="extras">
+    <div class="extra-bloc">
+      <h3 class="sous-titre">Langues</h3>
+      <dl class="langues">
+        <div><dt>Français</dt><dd>Langue maternelle</dd></div>
+        <div><dt>Turc</dt><dd>Courant</dd></div>
+        <div><dt>Anglais</dt><dd>B2</dd></div>
+      </dl>
+    </div>
+    <div class="extra-bloc">
+      <h3 class="sous-titre">Centres d'intérêt</h3>
+      <ul class="outil-tags">
+        <li class="tag">Musculation</li>
+        <li class="tag">Arts martiaux</li>
+        <li class="tag">Jeux vidéo</li>
+        <li class="tag">Cybersécurité</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ─── CONTACT ───────────────────────────────────────────── -->
+<section class="contact" id="contact" aria-labelledby="titre-contact">
+  <h2 id="titre-contact">Contact</h2>
+  <p class="contact-intro">Une offre de stage, une question ? N'hésitez pas à me contacter.</p>
+  <hr class="contact-hr" />
+  <div class="contact-infos">
+    <div class="contact-item">
+      <span class="contact-label">Email</span>
+      <span class="contact-value"><a href="mailto:cemboyraz2007@gmail.com">cemboyraz2007@gmail.com</a></span>
+    </div>
+    <div class="contact-item">
+      <span class="contact-label">Téléphone</span>
+      <span class="contact-value"><a href="tel:+33749702566">07 49 70 25 66</a></span>
+    </div>
+    <div class="contact-item">
+      <span class="contact-label">LinkedIn</span>
+      <span class="contact-value">
+        <a href="https://www.linkedin.com/in/cem-boyraz-208708386" target="_blank" rel="noopener">cem-boyraz</a>
+      </span>
+    </div>
+    <div class="contact-item">
+      <span class="contact-label">CV</span>
+      <span class="contact-value"><a href="CV_Cem_Boyraz.pdf" download>Télécharger (PDF)</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────────────────── -->
+<footer>
+  <p>&copy; 2026 Conçu &amp; développé par <span class="footer-name">Cem BOYRAZ</span>.</p>
+</footer>
+
+<!-- ─── SCRIPTS ──────────────────────────────────────────── -->
+<script src="globe.js"></script>
+<script>
+  // Menu mobile
+  const toggle = document.querySelector(".nav-toggle");
+  const links = document.getElementById("nav-links");
+
+  function setMenu(open) {
+    links.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open);
+    toggle.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+    toggle.textContent = open ? "✕" : "☰";
+  }
+
+  toggle.addEventListener("click", () => setMenu(!links.classList.contains("open")));
+  links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && links.classList.contains("open")) {
+      setMenu(false);
+      toggle.focus();
+    }
+  });
+</script>
+
+</body>
+</html>
